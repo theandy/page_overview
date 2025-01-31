@@ -7,6 +7,7 @@ lib.contentElement {
 
 tt_content.pageoverview_pages =< lib.contentElement
 tt_content.pageoverview_pages {
+
     templateName = MenuSubpagesOverview
 
     templateRootPaths {
@@ -15,13 +16,12 @@ tt_content.pageoverview_pages {
     }
 
     dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 = menu
         10 {
             special = directory
             special.value.field = pages
-            as = menu
             dataProcessing {
-                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 = files
                 10 {
                     references.fieldName = media
                 }
