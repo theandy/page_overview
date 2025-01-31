@@ -7,12 +7,12 @@ lib.contentElement {
 
 page.10 {
     templateRootPaths {
-        400 = EXT:deine_extension/Resources/Private/Templates/Page/
+        400 = EXT:page_overview/Resources/Private/Templates/Page/
     }
     partialRootPaths {
-        400 = EXT:deine_extension/Resources/Private/Partials/Page/
+        400 = EXT:page_overview/Resources/Private/Partials/Page/
     }
     layoutRootPaths {
-        400 = EXT:deine_extension/Resources/Private/Layouts/Page/
+        400 = EXT:page_overview/Resources/Private/Layouts/Page/
     }
 }
