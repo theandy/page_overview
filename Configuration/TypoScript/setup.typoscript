@@ -1,9 +1,24 @@
 
-
+/*
 lib.contentElement {
     templateRootPaths.250 = EXT:page_overview/Resources/Private/Templates/
 }
+*/
 
-
-
-
+tt_content.pageoverview_pages =< lib.contentElement
+tt_content.pageoverview_pages {
+    templateName = MenuSubpages
+    dataProcessing {
+        10 = menu
+        10 {
+            special = directory
+            special.value.field = pages
+            dataProcessing {
+                10 = files
+                10 {
+                    references.fieldName = media
+                }
+            }
+        }
+    }
+}
