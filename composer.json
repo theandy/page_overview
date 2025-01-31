@@ -1,0 +1,23 @@
+{
+    "name": "andreas-loewer/page-overview",
+    "type": "typo3-cms-extension",
+    "description": "Displays page information of subpages as page overview",
+    "homepage": "https://andreasloewer.de/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-rte-ckeditor": "^12.4",
+        "typo3/cms-fluid-styled-content": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AndreasLoewer\\PageOverview\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "page_overview"
+        }
+    }
+}
