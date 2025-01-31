@@ -6,6 +6,13 @@ TCEFORM {
 
     }
     tt_content {
-
+        layout {
+            addItems {
+                400 = page_overview
+            }
+            altLabels {
+                400 = Seitenübersicht
+            }
+        }
     }
 }
