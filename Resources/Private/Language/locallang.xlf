@@ -6,6 +6,9 @@
             <authorEmail>info@andreasloewer.de</authorEmail>
         </header>
         <body>
+            <trans-unit id="pageoverview_pages__title">
+                <source>pageoverview_pages_title</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
