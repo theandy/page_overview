@@ -5,3 +5,20 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/TCEFORM.tsconfig">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+
+mod.wizards.newContentElement.wizardItems {
+    // add the content element to the tab "common"
+    common {
+        elements {
+            pageoverview_pages {
+                iconIdentifier = content-text
+                title = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_title
+                description = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_description
+                tt_content_defValues {
+                    CType = pageoverview_pages
+                }
+            }
+        }
+        show := addToList(pageoverview_pages)
+    }
+}

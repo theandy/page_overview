@@ -26,20 +26,5 @@ defined('TYPO3') or die();
 // Adds the content element icon to TCA typeicon_classes
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
 
-mod.wizards.newContentElement.wizardItems {
-    // add the content element to the tab "common"
-    common {
-        elements {
-            pageoverview_pages {
-                iconIdentifier = content-text
-        title = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_title
-        description = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_description
-        tt_content_defValues {
-                    CType = pageoverview_pages
-        }
-      }
-    }
-    show := addToList(pageoverview_pages)
-  }
-}
+
 
