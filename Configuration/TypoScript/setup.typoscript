@@ -1,14 +1,14 @@
 
-
+/*
 lib.contentElement {
     templateRootPaths.250 = EXT:page_overview/Resources/Private/Templates/
 }
+*/
 
 
-/*
 page.10 {
     templateRootPaths {
-        400 = EXT:page_overview/Resources/Private/Templates/
+        2 = EXT:page_overview/Resources/Private/Templates/
     }
 }
-*/
+
