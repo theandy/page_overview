@@ -12,8 +12,8 @@ mod.wizards.newContentElement.wizardItems {
         elements {
             pageoverview_pages {
                 iconIdentifier = content-text
-                title = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_title
-                description = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:myextension_newcontentelement_description
+                title = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:pageoverview_pages_title
+                description = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:pageoverview_pages_description
                 tt_content_defValues {
                     CType = pageoverview_pages
                 }
