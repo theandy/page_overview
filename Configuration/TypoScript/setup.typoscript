@@ -6,8 +6,8 @@ lib.contentElement {
 */
 
 
-tt_content.menu_subpages =< lib.contentElement
-tt_content.menu_subpages {
+tt_content.pageoverview_pages =< lib.contentElement
+tt_content.pageoverview_pages {
     templateName = MenuSubpagesOverview
     dataProcessing {
         10 = menu
