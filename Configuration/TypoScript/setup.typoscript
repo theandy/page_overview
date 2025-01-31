@@ -8,6 +8,12 @@ lib.contentElement {
 tt_content.pageoverview_pages =< lib.contentElement
 tt_content.pageoverview_pages {
     templateName = MenuSubpagesOverview
+
+    templateRootPaths {
+        0 = EXT:page_overview/Resources/Private/Templates/
+        # 1 = {$page.fluidtemplate.templateRootPath}
+    }
+
     dataProcessing {
         10 = menu
         10 {
