@@ -2,28 +2,25 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <h1>MenuSubpagesOverview.html</h1>
-
     <f:if condition="{menu}">
 
-        <div class="container">
+        <div class="page-overview">
 
-            <div class="row">
-                
-            <f:for each="{menu}" as="page">
-
-                <div class="col-4">
-                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')}{f:if(condition: page.current, then: ' aria-current="page"')} title="{page.title}">
-                    <span>{page.title}</span>
-                    <p>
-                        {page.data.description}
-                    </p>
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <f:for each="{menu}" as="page">
+                        <div class="col-4">
+                            <div class="page">
+                                <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"')}{f:if(condition: page.current, then: ' aria-current="page"')} title="{page.title}">
+                                    <h3>{page.title}</h3>
+                                </a>
+                                <p>
+                                    {page.data.description}
+                                </p>
+                            </div>
+                        </div>
+                    </f:for>
                 </div>
-
-
-
-            </f:for>
             </div>
 
         </div>
