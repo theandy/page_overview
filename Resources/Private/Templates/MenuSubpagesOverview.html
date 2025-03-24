@@ -12,7 +12,7 @@
                         <div class="col-4">
                             <div class="page">
                                 <a href="{page.link}" class=""
-                                   {f:if(condition: page.target, then: ' target="{page.target}"')}
+                                    {f:if(condition: page.target, then: ' target="{page.target}"')}
                                     {f:if(condition: page.current, then: ' aria-current="page"')}
                                 title="{page.title}">
                                     <h3>{page.title}</h3>
@@ -21,20 +21,17 @@
                                     {page.data.description}
                                 </p>
 
-                                <a href="{page.link}" class="btn w-100"
+                                <a href="{page.link}" class="btn btn-default w-100"
                                    {f:if(condition: page.target, then: ' target="{page.target}"')}
                                 {f:if(condition: page.current, then: ' aria-current="page"')}
                                 title="{page.title}">
                                     mehr
                                 </a>
                             </div>
-
-                            </div>
                         </div>
                     </f:for>
                 </div>
             </div>
-
         </div>
     </f:if>
 
