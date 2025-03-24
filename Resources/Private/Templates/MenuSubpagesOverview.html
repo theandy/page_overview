@@ -17,6 +17,11 @@
                                 <p>
                                     {page.data.description}
                                 </p>
+
+                                <a href="{page.link}" class="btn w-100" {f:if(condition: page.target, then: ' target="{page.target}"')}{f:if(condition: page.current, then: ' aria-current="page"')} title="{page.title}">
+
+                            </div>
+
                             </div>
                         </div>
                     </f:for>
