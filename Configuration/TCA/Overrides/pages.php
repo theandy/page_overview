@@ -50,7 +50,9 @@ ExtensionManagementUtility::addToAllTCAtypes(
 
 ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    '--div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview, tx_page_overview_img, tx_page_overview_desc'
+    '--div--;Übersicht, tx_page_overview_img, tx_page_overview_desc',
+    '',
+    'after:title'
 );
 
 
