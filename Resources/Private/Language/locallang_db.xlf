@@ -6,12 +6,9 @@
             <authorEmail>info@andreasloewer.de</authorEmail>
         </header>
         <body>
-            <languageKey index="default" type="array">
-                <label index="tab.overview">Übersichts-Daten</label>
-            </languageKey>
-            <languageKey index="de" type="array">
-                <label index="tab.overview">Übersichts-Daten</label>
-            </languageKey>
+            <trans-unit id="tab.overview">
+                <source>Page overview</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
