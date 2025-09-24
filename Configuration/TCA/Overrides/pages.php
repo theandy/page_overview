@@ -9,7 +9,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 $additionalColumns = [
     'tx_page_image' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_images/Resources/Private/Language/locallang_db.xlf:pages.tx_page_image',
+        'label' => 'Seitenbild für die Übersicht',
         'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
             'tx_page_overview_img',
             [
