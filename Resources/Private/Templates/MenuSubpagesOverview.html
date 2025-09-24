@@ -3,7 +3,7 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <f:debug>{_all}</f:debug>
+
 
     <f:if condition="{menu}">
 
@@ -19,12 +19,21 @@
                                 title="{page.title}">
                                     <h3>{page.title}</h3>
                                 </a>
-                                <p>
-                                    {page.data.description}
-                                    <hr />
-                                {page.data.tx_page_overview_desc}
 
-                                </p>
+                                <f:if condition="{page.data.tx_page_overview_desc}">
+                                    <f:then>
+                                        <f:comment>custom description given:</f:comment>
+                                        <f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw>
+                                    </f:then>
+                                    <f:else>
+                                        <f:comment>use description from SEO settings:</f:comment>
+                                        <p>
+                                            {page.data.description}
+                                        </p>
+                                    </f:else>
+                                </f:if>
+
+
 
                                 <a href="{page.link}" class="btn btn-default w-100"
                                    {f:if(condition: page.target, then: ' target="{page.target}"')}
