@@ -8,15 +8,12 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 // Neue Felder definieren
 $additionalColumns = [
     'tx_page_overview_note' => [
-        'exclude' => 1,
+        'exclude' => 0, // soll immer sichtbar sein
         'label' => '',
         'config' => [
-            'type' => 'text',
-            'readOnly' => true,
-            'enableRichtext' => true,
-            'richtextConfiguration' => 'default',
+            'type' => 'none',          // reiner Ausgabetext
+            'renderType' => 'none',    // kein Input, keine Controls
             'default' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview.desc',
-            'rows' => 3,
         ],
     ],
     'tx_page_overview_img' => [
