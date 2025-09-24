@@ -7,15 +7,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 // Neue Felder definieren
 $additionalColumns = [
-    'tx_page_overview_note' => [
-        'exclude' => 0, // soll immer sichtbar sein
-        'label' => '',
-        'config' => [
-            'type' => 'none',          // reiner Ausgabetext
-            'renderType' => 'none',    // kein Input, keine Controls
-            'default' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview.desc',
-        ],
-    ],
     'tx_page_overview_img' => [
         'exclude' => 1,
         'label' => 'Seitenbild für die Übersicht',
@@ -33,7 +24,7 @@ $additionalColumns = [
     ],
     'tx_page_overview_desc' => [
         'exclude' => 1,
-        'label' => 'Beschreibung für die Übersicht',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:desc',
         'config' => [
             'type' => 'text',
             'enableRichtext' => true,
@@ -60,7 +51,7 @@ ExtensionManagementUtility::addToAllTCAtypes(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
     '--div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview,
-     tx_page_overview_note, tx_page_overview_img, tx_page_overview_desc',
+     tx_page_overview_img, tx_page_overview_desc',
     '',
     'after:title'
 );
