@@ -39,12 +39,20 @@ $additionalColumns = [
 ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
 
 // Felder dem Backend-Formular hinzufügen
+/*
 ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
     'tx_page_overview_img, tx_page_overview_desc',
     '1',
     'after:title'
 );
+*/
+
+ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    '--div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview, tx_page_overview_img, tx_page_overview_desc'
+);
+
 
 call_user_func(function()
 {
