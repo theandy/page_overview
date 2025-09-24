@@ -10,7 +10,13 @@
                 <source>Page overview</source>
             </trans-unit>
             <trans-unit id="desc">
-                <source>Your description for this page when shown in an overview.</source>
+                <source>Your description.</source>
+            </trans-unit>
+            <trans-unit id="img.label">
+                <source>Your image</source>
+            </trans-unit>
+            <trans-unit id="img.desc">
+                <source>Will be uses for this page when shown on an overview.</source>
             </trans-unit>
         </body>
     </file>
