@@ -9,6 +9,9 @@
             <trans-unit id="tab.overview">
                 <source>Page overview</source>
             </trans-unit>
+            <trans-unit id="tab.overview.desc">
+                <source>Hier können Sie ein Bild und eine kurze Beschreibung für die Übersichtsansicht pflegen.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
