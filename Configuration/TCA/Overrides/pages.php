@@ -22,6 +22,17 @@ $additionalColumns = [
             'jpg,jpeg,png,svg,gif' // Erlaubte Bildtypen
         ),
     ],
+    'tx_page_overview_desc' => [
+        'exclude' => 1,
+        'label' => 'Beschreibung für die Übersicht',
+        'config' => [
+            'type' => 'text',
+            'enableRichtext' => true,
+            'richtextConfiguration' => 'default',
+            'rows' => 10,
+            'cols' => 40,
+        ],
+    ],
 ];
 
 // Felder registrieren
@@ -30,7 +41,7 @@ ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
 // Felder dem Backend-Formular hinzufügen
 ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    'tx_page_overview_img',
+    'tx_page_overview_img, tx_page_overview_desc',
     '1',
     'after:title'
 );
