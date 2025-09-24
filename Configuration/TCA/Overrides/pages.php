@@ -7,7 +7,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 // Neue Felder definieren
 $additionalColumns = [
-    'tx_page_image' => [
+    'tx_page_overview_img' => [
         'exclude' => 1,
         'label' => 'Seitenbild für die Übersicht',
         'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
