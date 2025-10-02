@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace AndreasLoewer\PageOverview\DataProcessing;
 
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
-use TYPO3\CMS\Frontend\DataProcessing\DataProcessorInterface;
+use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
 final class ExcludeFromOverviewProcessor implements DataProcessorInterface
 {
@@ -17,7 +17,7 @@ final class ExcludeFromOverviewProcessor implements DataProcessorInterface
         $source = $processorConfiguration['source'] ?? 'menu';
         $field  = $processorConfiguration['field']  ?? 'tx_page_overview_exclude';
 
-        if (!isset($processedData[$source]) || !is_array($processedData[$source])) {
+        if (empty($processedData[$source]) || !is_array($processedData[$source])) {
             return $processedData;
         }
 
