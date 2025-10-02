@@ -12,6 +12,9 @@
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>
+            <trans-unit id="pageoverview_pages_title">
+                <source>Pages overview plugin</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

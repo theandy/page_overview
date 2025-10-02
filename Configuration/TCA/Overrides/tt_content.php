@@ -9,7 +9,7 @@ defined('TYPO3') or die();
     'CType',
     [
         // title
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:pageoverview_pages_title',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:pageoverview_pages_title',
         // plugin signature: extkey_identifier
         'value' => 'pageoverview_pages',
         // icon identifier
