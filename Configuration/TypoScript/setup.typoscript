@@ -40,7 +40,7 @@ tt_content.pageoverview_pages {
             # Zeile mit "additionalFields" ENTFERNEN
         }
 
-        20 = Vendor\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
+        20 = AndreasLoewer\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
         20 {
             source = menu
             field = tx_page_overview_exclude
