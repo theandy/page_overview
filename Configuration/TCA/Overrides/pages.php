@@ -34,6 +34,20 @@ $additionalColumns = [
             'cols' => 40,
         ],
     ],
+    // NEU: Ausschluss-Haken
+    'tx_page_overview_exclude' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
+        'description' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.desc',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                ['label' => '', 'value' => 1],
+            ],
+            'default' => 0,
+        ],
+    ],
 ];
 
 // Felder registrieren
@@ -49,10 +63,11 @@ ExtensionManagementUtility::addToAllTCAtypes(
 );
 */
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+// Tab beibehalten, Feld anhängen
+ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
     '--div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tab.overview,
-     tx_page_overview_img, tx_page_overview_desc',
+     tx_page_overview_img, tx_page_overview_desc, tx_page_overview_exclude',
     '',
     'after:title'
 );
