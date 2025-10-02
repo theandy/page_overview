@@ -4,7 +4,7 @@ defined('TYPO3') or die();
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-// neues Feld registrieren
+// 1) Feld registrieren
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_root' => [
         'exclude' => 1,
@@ -15,18 +15,15 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'allowed' => 'pages',
             'size' => 1,
             'maxitems' => 1,
-            'minitems' => 0,
-            'fieldWizard' => [
-                'recordsOverview' => ['disabled' => false],
-            ],
-            'suggestOptions' => [
-                'default' => ['additionalSearchFields' => 'nav_title,subtitle'],
-            ],
+            'fieldWizard' => ['recordsOverview' => ['disabled' => false]],
+            'suggestOptions' => ['default' => ['additionalSearchFields' => 'nav_title,subtitle']],
         ],
+        // nur beim passenden CType anzeigen, falls es global angehängt würde
+        'displayCond' => 'FIELD:CType:=:pageoverview_pages',
     ],
 ]);
 
-// CType eintragen
+// 2) CType registrieren
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -40,19 +37,15 @@ ExtensionManagementUtility::addTcaSelectItem(
     'textmedia',
     'after'
 );
-
-// Icon zuordnen
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
 
-// Felder anzeigen
+// 3) Basis-Showitem definieren wie gehabt
 $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header; Internal title (not displayed),
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        --div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:tab.settings,
-            tx_page_overview_root,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
             --palette--;;access,
@@ -66,3 +59,11 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
         ],
     ],
 ];
+
+// 4) Feld zuverlässig einhängen (nach bodytext)
+ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    '--div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:tab.settings,tx_page_overview_root',
+    'pageoverview_pages',
+    'after:bodytext'
+);
