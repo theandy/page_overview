@@ -15,6 +15,10 @@
             <trans-unit id="pageoverview_pages_title">
                 <source>Pages overview plugin</source>
             </trans-unit>
+            <trans-unit id="field.rootPage">
+                <source>Start page for overview</source>
+                <target xml:lang="de">Startseite für die Übersicht</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
