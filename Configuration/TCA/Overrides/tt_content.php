@@ -1,42 +1,62 @@
 <?php
-
 declare(strict_types=1);
 defined('TYPO3') or die();
 
-// Adds the content element to the "Type" dropdown
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+// neues Feld registrieren
+ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'tx_page_overview_root' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:field.rootPage',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'size' => 1,
+            'maxitems' => 1,
+            'minitems' => 0,
+            'fieldWizard' => [
+                'recordsOverview' => ['disabled' => false],
+            ],
+            'suggestOptions' => [
+                'default' => ['additionalSearchFields' => 'nav_title,subtitle'],
+            ],
+        ],
+    ],
+]);
+
+// CType eintragen
+ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        // title
         'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:pageoverview_pages_title',
-        // plugin signature: extkey_identifier
         'value' => 'pageoverview_pages',
-        // icon identifier
         'icon' => 'content-text',
-        // group
         'group' => 'default',
-        // description
         'description' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:pageoverview_pages_description',
     ],
     'textmedia',
-    'after',
+    'after'
 );
 
-// Adds the content element icon to TCA typeicon_classes
+// Icon zuordnen
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
 
-// Configure the default backend fields for the content element
+// Felder anzeigen
 $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
     'showitem' => '
-            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-               --palette--;;general,
-               header; Internal title (not displayed),
-               bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-               --palette--;;hidden,
-               --palette--;;access,
-         ',
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+            --palette--;;general,
+            header; Internal title (not displayed),
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+        --div--;LLL:EXT:page_overview/Resources/Private/Language/locallang_be.xlf:tab.settings,
+            tx_page_overview_root,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;;access,
+    ',
     'columnsOverrides' => [
         'bodytext' => [
             'config' => [
@@ -46,7 +66,3 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
         ],
     ],
 ];
-
-
-
-
