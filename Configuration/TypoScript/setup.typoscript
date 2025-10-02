@@ -37,7 +37,7 @@ tt_content.pageoverview_pages {
             special = directory
             special.value.field = tx_page_overview_root
             special.value.ifEmpty.data = TSFE:id
-            additionalFields = tx_page_overview_exclude
+            # Zeile mit "additionalFields" ENTFERNEN
         }
 
         20 = Vendor\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
@@ -47,5 +47,6 @@ tt_content.pageoverview_pages {
         }
     }
 }
+
 
 
