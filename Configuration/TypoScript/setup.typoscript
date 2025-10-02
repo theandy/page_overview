@@ -5,7 +5,7 @@ lib.contentElement {
 }
 
 
-
+/*
 tt_content.pageoverview_pages =< lib.contentElement
 tt_content.pageoverview_pages {
     templateName = MenuSubpagesOverview
@@ -20,6 +20,23 @@ tt_content.pageoverview_pages {
                     references.fieldName = media
                 }
             }
+        }
+    }
+}
+*/
+tt_content.pageoverview_pages =< lib.contentElement
+tt_content.pageoverview_pages {
+    templateName = PageOverview
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            as = pages
+            levels = 1
+            includeSpacer = 0
+            special = directory
+            special.value.field = tx_page_overview_root
+            special.value.ifEmpty.data = TSFE:id
         }
     }
 }
