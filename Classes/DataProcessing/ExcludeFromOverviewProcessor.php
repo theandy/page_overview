@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\PageOverview\DataProcessing;
+namespace AndreasLoewer\PageOverview\DataProcessing;
 
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\DataProcessing\DataProcessorInterface;
