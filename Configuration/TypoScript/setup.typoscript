@@ -27,6 +27,7 @@ tt_content.pageoverview_pages {
 tt_content.pageoverview_pages =< lib.contentElement
 tt_content.pageoverview_pages {
     templateName = PageOverview
+
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         10 {
@@ -36,7 +37,15 @@ tt_content.pageoverview_pages {
             special = directory
             special.value.field = tx_page_overview_root
             special.value.ifEmpty.data = TSFE:id
+            additionalFields = tx_page_overview_exclude
+        }
+
+        20 = Vendor\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
+        20 {
+            source = menu
+            field = tx_page_overview_exclude
         }
     }
 }
+
 

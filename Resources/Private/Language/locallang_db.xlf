@@ -18,6 +18,14 @@
             <trans-unit id="img.desc">
                 <source>Will be uses for this page when shown on an overview.</source>
             </trans-unit>
+            <trans-unit id="exclude.label">
+                <source>Exclude from page overview</source>
+                <target xml:lang="de">Von Seitenübersicht ausschließen</target>
+            </trans-unit>
+            <trans-unit id="exclude.desc">
+                <source>Checked = hide this page from the Page Overview element.</source>
+                <target xml:lang="de">Aktiv = Seite in der Seitenübersicht ausblenden.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
