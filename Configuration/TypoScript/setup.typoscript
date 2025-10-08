@@ -38,6 +38,23 @@ tt_content.pageoverview_pages {
             special.value.field = tx_page_overview_root
             special.value.ifEmpty.data = TSFE:id
             # Zeile mit "additionalFields" ENTFERNEN
+
+            # Bilder je Menüpunkt laden
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references {
+                        table = pages
+                        uid.field = uid         # UID des Menüeintrags (Seite)
+                        fieldName = tx_page_overview_img
+                    }
+
+
+                    as = overviewImages       # landet pro Item unter {item.overviewImages}
+                }
+            }
+
+
         }
 
         20 = AndreasLoewer\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
@@ -46,15 +63,7 @@ tt_content.pageoverview_pages {
             field = tx_page_overview_exclude
         }
 
-        30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        30 {
-            references {
-                table = pages
-                uid.field = uid
-                fieldName = tx_page_overview_img
-            }
-            as = overviewImages
-        }
+
 
     }
 }
