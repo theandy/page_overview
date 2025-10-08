@@ -50,7 +50,7 @@ tt_content.pageoverview_pages {
                     }
 
 
-                    as = overviewImages       # landet pro Item unter {item.overviewImages}
+                    as = overviewImages
                 }
             }
 
