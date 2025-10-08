@@ -9,10 +9,31 @@
 
         <div class="page-overview">
             <div class="container">
+
+                <f:if condition="{data.bodytext} || {data.header}">
+                    <div class="row">
+                        <div class="col-12">
+                            <f:if condition="{data.header}">
+                                <h2>{data.header}</h2>
+                            </f:if>
+                            <f:if condition="{data.bodytext}">
+                                <f:format.raw>{data.bodytext}</f:format.raw>
+                            </f:if>
+                        </div>
+                    </div>
+                </f:if>
+
                 <div class="row">
                     <f:for each="{menu}" as="page">
                         <div class="col-4">
                             <div class="page">
+
+                                <f:if condition="{overviewImages}">
+                                    <f:image image="{overviewImages.0}"
+                                             alt="{overviewImages.0.alternative -> f:or(alternative: data.nav_title -> f:or(alternative: data.title))}"
+                                             title="{overviewImages.0.title}" />
+                                </f:if>
+
                                 <a href="{page.link}" class=""
                                     {f:if(condition: page.target, then: ' target="{page.target}"')}
                                     {f:if(condition: page.current, then: ' aria-current="page"')}

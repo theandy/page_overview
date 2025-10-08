@@ -45,6 +45,17 @@ tt_content.pageoverview_pages {
             source = menu
             field = tx_page_overview_exclude
         }
+
+        30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        30 {
+            references {
+                table = pages
+                uid.field = uid
+                fieldName = tx_page_overview_img
+            }
+            as = overviewImages
+        }
+
     }
 }
 
