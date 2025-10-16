@@ -28,10 +28,10 @@
                         <div class="col-4">
                             <div class="page">
 
-                                <f:if condition="{overviewImages}">
-                                    <f:image image="{overviewImages.0}"
-                                             alt="{overviewImages.0.alternative -> f:or(alternative: data.nav_title -> f:or(alternative: data.title))}"
-                                             title="{overviewImages.0.title}" />
+                                <f:if condition="{page.overviewImages}">
+                                    <f:image image="{page.overviewImages.0}"
+                                             alt="{page.overviewImages.0.alternative -> f:or(alternative: data.nav_title -> f:or(alternative: data.title))}"
+                                             title="{page.overviewImages.0.title}" />
                                 </f:if>
 
                                 <a href="{page.link}" class=""
