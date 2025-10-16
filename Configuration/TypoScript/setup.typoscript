@@ -8,7 +8,7 @@ lib.contentElement {
 tt_content.pageoverview_pages = FLUIDTEMPLATE
 tt_content.pageoverview_pages {
 
-    templateName = PageOverview
+    # templateName = PageOverview
     templateRootPaths.250 = EXT:page_overview/Resources/Private/Templates/
     partialRootPaths.250  = EXT:page_overview/Resources/Private/Partials/
     layoutRootPaths.250   = EXT:page_overview/Resources/Private/Layouts/
