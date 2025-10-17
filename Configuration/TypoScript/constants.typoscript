@@ -1,6 +1,6 @@
 # cat=plugin.tx_pageoverview//10; type=string; label=Template Root Path
-plugin.tx_pageoverview.view.templateRootPath =
+plugin.tx_pageoverview.view.templateRootPath = EXT:page_overview/Resources/Private/Templates/
 # cat=plugin.tx_pageoverview//11; type=string; label=Partial Root Path
-plugin.tx_pageoverview.view.partialRootPath =
+plugin.tx_pageoverview.view.partialRootPath = EXT:page_overview/Resources/Private/Partials/
 # cat=plugin.tx_pageoverview//12; type=string; label=Layout Root Path
-plugin.tx_pageoverview.view.layoutRootPath =
+plugin.tx_pageoverview.view.layoutRootPath = EXT:page_overview/Resources/Private/Layouts/
