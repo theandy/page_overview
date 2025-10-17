@@ -1,12 +1,8 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/html"
-      data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/html" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
+
 <f:section name="Main">
-
-
-
     <f:if condition="{menu}">
-
         <div class="page-overview">
             <div class="container">
 
@@ -25,50 +21,12 @@
 
                 <div class="row">
                     <f:for each="{menu}" as="page">
-                        <div class="col-4">
-                            <div class="page">
-
-                                <f:if condition="{page.overviewImages}">
-                                    <f:image image="{page.overviewImages.0}"
-                                             alt="{page.overviewImages.0.alternative -> f:or(alternative: data.nav_title -> f:or(alternative: data.title))}"
-                                             title="{page.overviewImages.0.title}" />
-                                </f:if>
-
-                                <a href="{page.link}" class=""
-                                    {f:if(condition: page.target, then: ' target="{page.target}"')}
-                                    {f:if(condition: page.current, then: ' aria-current="page"')}
-                                title="{page.title}">
-                                    <h3>{page.title}</h3>
-                                </a>
-
-                                <f:if condition="{page.data.tx_page_overview_desc}">
-                                    <f:then>
-                                        <f:comment>custom description given:</f:comment>
-                                        <f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw>
-                                    </f:then>
-                                    <f:else>
-                                        <f:comment>use description from SEO settings:</f:comment>
-                                        <p>
-                                            {page.data.description}
-                                        </p>
-                                    </f:else>
-                                </f:if>
-
-
-
-                                <a href="{page.link}" class="btn btn-default w-100"
-                                   {f:if(condition: page.target, then: ' target="{page.target}"')}
-                                {f:if(condition: page.current, then: ' aria-current="page"')}
-                                title="{page.title}">
-                                    mehr
-                                </a>
-                            </div>
-                        </div>
+                        <f:render partial="PageItem" arguments="{page: page}" />
                     </f:for>
                 </div>
+
             </div>
         </div>
     </f:if>
-
 </f:section>
 </html>

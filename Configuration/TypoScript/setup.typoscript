@@ -1,17 +1,23 @@
-
-
 lib.contentElement {
     # templateRootPaths.250 = EXT:page_overview/Resources/Private/Templates/
 }
 
-# tt_content.pageoverview_pages =< lib.contentElement
 tt_content.pageoverview_pages = FLUIDTEMPLATE
 tt_content.pageoverview_pages {
-
     templateName = PageOverview
-    templateRootPaths.10 = EXT:page_overview/Resources/Private/Templates/
-    partialRootPaths.10  = EXT:page_overview/Resources/Private/Partials/
-    layoutRootPaths.10   = EXT:page_overview/Resources/Private/Layouts/
+
+    templateRootPaths {
+        10 = EXT:page_overview/Resources/Private/Templates/
+        20 = {$plugin.tx_pageoverview.view.templateRootPath}
+    }
+    partialRootPaths {
+        10 = EXT:page_overview/Resources/Private/Partials/
+        20 = {$plugin.tx_pageoverview.view.partialRootPath}
+    }
+    layoutRootPaths {
+        10 = EXT:page_overview/Resources/Private/Layouts/
+        20 = {$plugin.tx_pageoverview.view.layoutRootPath}
+    }
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -22,24 +28,18 @@ tt_content.pageoverview_pages {
             special = directory
             special.value.field = tx_page_overview_root
             special.value.ifEmpty.data = TSFE:id
-            # Zeile mit "additionalFields" ENTFERNEN
 
-            # Bilder je Menüpunkt laden
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
                 10 {
                     references {
                         table = pages
-                        uid.field = uid         # UID des Menüeintrags (Seite)
+                        uid.field = uid
                         fieldName = tx_page_overview_img
                     }
-
-
                     as = overviewImages
                 }
             }
-
-
         }
 
         20 = AndreasLoewer\PageOverview\DataProcessing\ExcludeFromOverviewProcessor
@@ -47,11 +47,5 @@ tt_content.pageoverview_pages {
             source = menu
             field = tx_page_overview_exclude
         }
-
-
-
     }
 }
-
-
-
