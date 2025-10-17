@@ -9,9 +9,9 @@ tt_content.pageoverview_pages = FLUIDTEMPLATE
 tt_content.pageoverview_pages {
 
     templateName = PageOverview
-    templateRootPaths.250 = EXT:page_overview/Resources/Private/Templates/
-    partialRootPaths.250  = EXT:page_overview/Resources/Private/Partials/
-    layoutRootPaths.250   = EXT:page_overview/Resources/Private/Layouts/
+    templateRootPaths.10 = EXT:page_overview/Resources/Private/Templates/
+    partialRootPaths.10  = EXT:page_overview/Resources/Private/Partials/
+    layoutRootPaths.10   = EXT:page_overview/Resources/Private/Layouts/
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
