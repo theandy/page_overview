@@ -1,12 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <div class="col-4">
     <div class="page">
-
-        partial!
         <f:if condition="{page.overviewImages}">
             <f:image image="{page.overviewImages.0}"
+                     cropVariant="overview"
                      alt="{page.overviewImages.0.alternative -> f:or(alternative: page.title)}"
                      title="{page.overviewImages.0.title}" />
+        </f:if>
+
+        <f:if condition="{!page.overviewImages} && {settings.defaultImage.enable} && {settings.defaultImage.path}">
+            <f:image src="{settings.defaultImage.path}"
+                     alt="{page.title}" title="{page.title}" />
         </f:if>
 
         <a href="{page.link}"
@@ -17,12 +21,8 @@
         </a>
 
         <f:if condition="{page.data.tx_page_overview_desc}">
-            <f:then>
-                <f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw>
-            </f:then>
-            <f:else>
-                <p>{page.data.description}</p>
-            </f:else>
+            <f:then><f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw></f:then>
+            <f:else><p>{page.data.description}</p></f:else>
         </f:if>
 
         <a href="{page.link}" class="btn btn-default w-100"

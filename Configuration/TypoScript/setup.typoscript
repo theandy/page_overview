@@ -19,6 +19,11 @@ tt_content.pageoverview_pages {
         20 = {$plugin.tx_pageoverview.view.layoutRootPath}
     }
 
+    settings {
+        defaultImage.enable = {$plugin.tx_pageoverview.settings.defaultImage.enable}
+        defaultImage.path = {$plugin.tx_pageoverview.settings.defaultImage.path}
+    }
+
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         10 {

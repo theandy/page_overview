@@ -1,6 +1,11 @@
 # cat=plugin.tx_pageoverview//10; type=string; label=Template Root Path
-plugin.tx_pageoverview.view.templateRootPath = EXT:page_overview/Resources/Private/Templates/
+plugin.tx_pageoverview.view.templateRootPath =
 # cat=plugin.tx_pageoverview//11; type=string; label=Partial Root Path
-plugin.tx_pageoverview.view.partialRootPath = EXT:page_overview/Resources/Private/Partials/
+plugin.tx_pageoverview.view.partialRootPath =
 # cat=plugin.tx_pageoverview//12; type=string; label=Layout Root Path
-plugin.tx_pageoverview.view.layoutRootPath = EXT:page_overview/Resources/Private/Layouts/
+plugin.tx_pageoverview.view.layoutRootPath =
+
+# cat=plugin.tx_pageoverview//20; type=boolean; label=Enable default image if no page image exists
+plugin.tx_pageoverview.settings.defaultImage.enable = 0
+# cat=plugin.tx_pageoverview//21; type=string; label=Path to default image (FAL/Public/EXT:)
+plugin.tx_pageoverview.settings.defaultImage.path = EXT:page_overview/Resources/Public/Images/default.png
