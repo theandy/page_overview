@@ -1,9 +1,9 @@
 <?php
+declare(strict_types=1);
 
 defined('TYPO3') or die('Access denied.');
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 // Neue Felder definieren
 $additionalColumns = [
@@ -19,6 +19,27 @@ $additionalColumns = [
                     'showPossibleLocalizationRecords' => true,
                 ],
                 'maxitems' => 1,
+                // Nur ein vorgegebenes Crop-Format zulassen (Variant "overview" mit Ratio 16:9)
+                'overrideChildTca' => [
+                    'columns' => [
+                        'crop' => [
+                            'config' => [
+                                'cropVariants' => [
+                                    'overview' => [
+                                        'title' => 'Overview',
+                                        'allowedAspectRatios' => [
+                                            '16_9' => [
+                                                'title' => '16:9',
+                                                'value' => 16 / 9,
+                                            ],
+                                        ],
+                                        'selectedRatio' => '16_9',
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'jpg,jpeg,png,svg,gif' // Erlaubte Bildtypen
         ),
@@ -34,7 +55,6 @@ $additionalColumns = [
             'cols' => 40,
         ],
     ],
-    // NEU: Ausschluss-Haken
     'tx_page_overview_exclude' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
@@ -53,16 +73,6 @@ $additionalColumns = [
 // Felder registrieren
 ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
 
-// Felder dem Backend-Formular hinzufügen
-/*
-ExtensionManagementUtility::addToAllTCAtypes(
-    'pages',
-    'tx_page_overview_img, tx_page_overview_desc',
-    '1',
-    'after:title'
-);
-*/
-
 // Tab beibehalten, Feld anhängen
 ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
@@ -72,18 +82,9 @@ ExtensionManagementUtility::addToAllTCAtypes(
     'after:title'
 );
 
-
-call_user_func(function()
-{
-    /**
-     * Temporary variables
-     */
+call_user_func(static function (): void {
     $extensionKey = 'page_overview';
-
-    /**
-     * Default PageTS for PageOverview
-     */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
         'Configuration/TsConfig/Page/All.tsconfig',
         'Page Overview'
