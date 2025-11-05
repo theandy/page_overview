@@ -25,15 +25,15 @@ $additionalColumns = [
                         'crop' => [
                             'config' => [
                                 'cropVariants' => [
-                                    'overview' => [
-                                        'title' => 'Overview',
+                                    'desktop' => [
+                                        'title' => 'Desktop',
                                         'allowedAspectRatios' => [
-                                            '16_9' => [
+                                            'overview' => [
                                                 'title' => '16:9',
                                                 'value' => 16 / 9,
                                             ],
                                         ],
-                                        'selectedRatio' => '16_9',
+                                        'selectedRatio' => 'overview',
                                     ],
                                 ],
                             ],
