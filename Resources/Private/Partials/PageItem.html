@@ -1,7 +1,7 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 <div class="col-4">
     <div class="page">
-
 
         <f:if condition="{page.overviewImages}">
             <f:then>
@@ -25,9 +25,16 @@
         <h3>{page.title}</h3>
         </a>
 
-        <f:if condition="{page.data.tx_page_overview_desc}">
-            <f:then><f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw></f:then>
-            <f:else><p>{page.data.description}</p></f:else>
+        <!-- Beschreibung nur anzeigen, wenn im Content-Element aktiviert -->
+        <f:if condition="{showDescription}">
+            <f:if condition="{page.data.tx_page_overview_desc}">
+                <f:then>
+                    <f:format.raw>{page.data.tx_page_overview_desc}</f:format.raw>
+                </f:then>
+                <f:else>
+                    <p>{page.data.description}</p>
+                </f:else>
+            </f:if>
         </f:if>
 
         <a href="{page.link}" class="btn btn-default w-100"

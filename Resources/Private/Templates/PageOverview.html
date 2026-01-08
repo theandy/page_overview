@@ -1,9 +1,9 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/html" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns="http://www.w3.org/1999/html"
+      data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 
 <f:section name="Main">
-
-    <pre>Resources/Private/Templates/PageOverview.html</pre>
 
     <f:if condition="{menu}">
         <div class="page-overview">
@@ -24,7 +24,13 @@
 
                 <div class="row">
                     <f:for each="{menu}" as="page">
-                        <f:render partial="PageItem" arguments="{page: page}" />
+                        <f:render
+                            partial="PageItem"
+                            arguments="{
+                                page: page,
+                                showDescription: data.tx_page_overview_showdesc
+                            }"
+                        />
                     </f:for>
                 </div>
 

@@ -20,6 +20,16 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'suggestOptions' => ['default' => ['additionalSearchFields' => 'nav_title,subtitle']],
         ],
     ],
+
+    // NEU: Anzeige der Seitenbeschreibung toggeln (Default: an)
+    'tx_page_overview_showdesc' => [
+        'exclude' => 1,
+        'label' => 'Seitenbeschreibungen anzeigen',
+        'config' => [
+            'type' => 'check',
+            'default' => 1,
+        ],
+    ],
 ]);
 
 // CType registrieren
@@ -47,6 +57,7 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;Einstellungen,
             tx_page_overview_root,
+            tx_page_overview_showdesc,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
             --palette--;;access,
