@@ -18,6 +18,9 @@ $additionalColumns = [
                     'createNewRelationLinkTitle' => 'Bild hinzufügen für die Ansicht',
                     'showPossibleLocalizationRecords' => true,
                 ],
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true,
+                ],
                 'maxitems' => 1,
                 // Nur ein vorgegebenes Crop-Format zulassen (Variant "overview" mit Ratio 16:9)
                 'overrideChildTca' => [
