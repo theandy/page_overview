@@ -41,6 +41,12 @@ tt_content.pageoverview_pages {
     }
 
     dataProcessing {
+
+        5 = TYPO3\CMS\Frontend\DataProcessing\RequestProcessor
+        5 {
+            as = request
+        }
+
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         10 {
             as = menu
