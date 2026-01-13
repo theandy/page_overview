@@ -26,6 +26,7 @@ tt_content.pageoverview_pages {
     settings {
         defaultImage.enable = {$plugin.tx_pageoverview.settings.defaultImage.enable}
         defaultImage.path = {$plugin.tx_pageoverview.settings.defaultImage.path}
+        defaultImageHANS.enable = 1
     }
 
     variables {
