@@ -5,13 +5,7 @@ lib.contentElement {
 tt_content.pageoverview_pages = FLUIDTEMPLATE
 tt_content.pageoverview_pages {
 
-    variables {
-        languageId = TEXT
-        languageId.data = request:language:id
 
-        languageIso = TEXT
-        languageIso.data = request:language:twoLetterIsoCode
-    }
 
 
     templateName = PageOverview
@@ -32,6 +26,17 @@ tt_content.pageoverview_pages {
     settings {
         defaultImage.enable = {$plugin.tx_pageoverview.settings.defaultImage.enable}
         defaultImage.path = {$plugin.tx_pageoverview.settings.defaultImage.path}
+    }
+
+    variables {
+        languageId = TEXT
+        languageId.data = request:language:id
+
+        languageIso = TEXT
+        languageIso.data = request:language:twoLetterIsoCode
+
+        test = TEXT
+        test.value = Test
     }
 
     dataProcessing {
