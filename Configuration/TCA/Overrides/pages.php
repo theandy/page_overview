@@ -8,7 +8,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 $additionalColumns = [
     'tx_page_overview_exclude' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
+        'label' => 'Aus Seitenübersicht ausschließen',
         'config' => [
             'type' => 'check',
             'default' => 0,
