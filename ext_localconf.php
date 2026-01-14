@@ -18,5 +18,5 @@ ExtensionUtility::configurePlugin(
 ExtensionManagementUtility::registerPageTSConfigFile(
     'page_overview',
     'Configuration/TsConfig/Page/ContentElementWizard.tsconfig',
-    'Page Overview – Content Elements'
+    'Page Overview – Wizard'
 );
