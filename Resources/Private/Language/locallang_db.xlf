@@ -34,6 +34,10 @@
                 <source>YOur Image</source>
                 <target xml:lang="de">Ihr Bild</target>
             </trans-unit>
+            <trans-unit id="plugin.pages.title">
+                <source>Here is the title</source>
+                <target xml:lang="de">Hier ist der Titel</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

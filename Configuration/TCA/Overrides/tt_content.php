@@ -16,7 +16,7 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 ExtensionUtility::registerPlugin(
     'PageOverview',
     'Pages',
-    'Seitenübersicht'
+    'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:plugin.pages.title'
 );
 
 /*
