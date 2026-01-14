@@ -24,7 +24,7 @@
             </trans-unit>
             <trans-unit id="exclude.item">
                 <source>Exclude this</source>
-                <target xml:lang="de">Das ausschließen</target>
+                <target xml:lang="de">Das ausschließen...</target>
             </trans-unit>
             <trans-unit id="exclude.desc">
                 <source>Checked = hide this page from the Page Overview element.</source>
