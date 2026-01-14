@@ -1,23 +1,38 @@
 <?php
-defined('TYPO3') or die('Access denied.');
+declare(strict_types=1);
 
-/**
- * RTE Preset
- */
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['page_overview'] = 'EXT:page_overview/Configuration/RTE/Default.yaml';
+defined('TYPO3') or die();
 
-/**
- * PageTS einbinden
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+/*
+ * -----------------------------------------------------------------
+ * Extbase-Plugin registrieren
+ * → erzeugt list_type = pageoverview_pages
+ * → gültig für TYPO3 11 & 12
+ * -----------------------------------------------------------------
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">'
+ExtensionUtility::configurePlugin(
+    'PageOverview',
+    'Pages',
+    [
+        \Vendor\PageOverview\Controller\PageOverviewController::class => 'list',
+    ],
+    [
+        \Vendor\PageOverview\Controller\PageOverviewController::class => '',
+    ]
 );
 
-/**
- * Stellt zusätzliche Seitenfelder im FE bereit, damit MenuProcessor sie liefert.
- * Wichtig für: tx_page_overview_exclude, tx_page_overview_desc
+/*
+ * -----------------------------------------------------------------
+ * PageTSConfig für Content-Element-Wizard registrieren
+ * → Pflicht für TYPO3 11
+ * → harmlos für TYPO3 12
+ * -----------------------------------------------------------------
  */
-$fieldsToAdd = ['tx_page_overview_exclude', 'tx_page_overview_desc'];
-$existing = array_filter(array_map('trim', explode(',', (string)($GLOBALS['TYPO3_CONF_VARS']['FE']['additionalGetPageFields'] ?? ''))));
-$merged = array_unique(array_filter(array_merge($existing, $fieldsToAdd)));
-$GLOBALS['TYPO3_CONF_VARS']['FE']['additionalGetPageFields'] = implode(',', $merged);
+ExtensionManagementUtility::registerPageTSConfigFile(
+    'page_overview',
+    'Configuration/TsConfig/Page/ContentElementWizard.tsconfig',
+    'Page Overview – Content Elements'
+);
