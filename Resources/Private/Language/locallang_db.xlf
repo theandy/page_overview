@@ -26,6 +26,10 @@
                 <source>Checked = hide this page from the Page Overview element.</source>
                 <target xml:lang="de">Aktiv = Seite in der Seitenübersicht ausblenden.</target>
             </trans-unit>
+            <trans-unit id="overview_img">
+                <source>YOur Image</source>
+                <target xml:lang="de">Ihr Bild</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

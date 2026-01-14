@@ -14,6 +14,7 @@ $additionalColumns = [
         'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
             'tx_page_overview_img',
             [
+                'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:overview_img',
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'Bild hinzufügen für die Ansicht',
                     'showPossibleLocalizationRecords' => true,
