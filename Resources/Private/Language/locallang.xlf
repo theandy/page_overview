@@ -7,7 +7,7 @@
         </header>
         <body>
             <trans-unit id="pageoverview_pages_title">
-                <source>pageoverview_pages_title</source>
+                <source>My page overview</source>
                 <target>Meine Seitenübersicht</target>
             </trans-unit>
         </body>
