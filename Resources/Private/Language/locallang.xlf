@@ -1,18 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2025-01-31UTC11:16:290">
-        <header>
-            <authorName>Andreas Löwer</authorName>
-            <authorEmail>info@andreasloewer.de</authorEmail>
-        </header>
+    <file
+    source-language="en"
+    target-language="de"
+    datatype="plaintext"
+    original="EXT:page_overview"
+    >
         <body>
-            <trans-unit id="pageoverview_pages_title">
-                <source>My page overview</source>
-                <target>Meine Seitenübersicht</target>
-            </trans-unit>
             <trans-unit id="plugin.pages.title">
-                <source>Here is the title</source>
-                <target xml:lang="de">Hier ist der coole Titel</target>
+                <source>Seitenübersicht</source>
             </trans-unit>
         </body>
     </file>
