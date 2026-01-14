@@ -4,6 +4,14 @@ defined('TYPO3') or die();
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+ExtensionUtility::registerPlugin(
+    'PageOverview',
+    'Pages',
+    'Seitenübersicht'
+);
+
 // Feld registrieren
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_root' => [
