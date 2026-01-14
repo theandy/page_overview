@@ -68,8 +68,8 @@ $additionalColumns = [
             'renderType' => 'checkboxToggle',
             'items' => [
                 [
-                    'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.item',
-                    'value' => 1,
+                    'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.item',
+                    1,
                 ],
             ],
             'default' => 0,
