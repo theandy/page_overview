@@ -10,6 +10,10 @@
                 <source>My page overview</source>
                 <target>Meine Seitenübersicht</target>
             </trans-unit>
+            <trans-unit id="plugin.pages.title">
+                <source>Here is the title</source>
+                <target xml:lang="de">Hier ist der Titel</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
