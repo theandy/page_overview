@@ -22,6 +22,10 @@
                 <source>Exclude from page overview</source>
                 <target xml:lang="de">Von Seitenübersicht ausschließen</target>
             </trans-unit>
+            <trans-unit id="exclude.item">
+                <source>Exclude this</source>
+                <target xml:lang="de">Das ausschließen</target>
+            </trans-unit>
             <trans-unit id="exclude.desc">
                 <source>Checked = hide this page from the Page Overview element.</source>
                 <target xml:lang="de">Aktiv = Seite in der Seitenübersicht ausblenden.</target>

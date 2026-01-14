@@ -67,7 +67,10 @@ $additionalColumns = [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
             'items' => [
-                ['label' => '', 'value' => 1],
+                [
+                    'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.item',
+                    'value' => 1,
+                ],
             ],
             'default' => 0,
         ],
