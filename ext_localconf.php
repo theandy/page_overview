@@ -3,9 +3,7 @@ defined('TYPO3') or die('Access denied.');
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-ExtensionManagementUtility::addPageTSConfig(
-    '@import "EXT:page_overview/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig"'
-);
+
 
 /**
  * RTE Preset
@@ -17,6 +15,9 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['page_overview'] = 'EXT:page_overv
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    '@import "EXT:page_overview/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig"'
 );
 
 /**
