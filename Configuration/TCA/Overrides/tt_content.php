@@ -33,6 +33,7 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
 ]);
 
 // CType registrieren
+/*
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -46,6 +47,21 @@ ExtensionManagementUtility::addTcaSelectItem(
     'textmedia',
     'after'
 );
+*/
+
+ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'Seitenübersicht',
+        'pageoverview_pages',
+        'content-text',
+    ],
+    'text',
+    'after'
+);
+
+
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
 
 // Typ konfigurieren (Feld direkt enthalten)
