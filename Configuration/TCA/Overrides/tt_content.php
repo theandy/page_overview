@@ -38,7 +38,7 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:plugin.pages.title',
+        'HARD LABEL',
         'pageoverview_pages',
         'content-text',
     ],
