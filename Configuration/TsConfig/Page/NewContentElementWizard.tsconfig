@@ -1,14 +1,18 @@
-mod.wizards.newContentElement.wizardItems.common {
+mod.wizards.newContentElement.wizardItems.pageoverview {
+    header = Page Overview
+    position = 20
+
     elements {
         pageoverview_pages {
             iconIdentifier = content-text
-            title = HARD TITLE
-            description = HARD DESC
+            title = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:plugin.pages.title
+            description = LLL:EXT:page_overview/Resources/Private/Language/locallang.xlf:plugin.pages.description
+
             tt_content_defValues {
                 CType = pageoverview_pages
             }
         }
     }
 
-    show := addToList(pageoverview_pages)
+    show = pageoverview_pages
 }
