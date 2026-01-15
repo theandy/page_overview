@@ -7,8 +7,12 @@
         </header>
         <body>
             <trans-unit id="general">
-                <source>Unterseiten anzeigen</source>
-                <target xml:lang="de">Show subpages</target>
+                <source>Settings</source>
+                <target xml:lang="de">Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="internal_title">
+                <source>Title (not displayed)</source>
+                <target xml:lang="de">Titel (wird nicht angezeigt)</target>
             </trans-unit>
         </body>
     </file>

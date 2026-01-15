@@ -69,7 +69,7 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            header; Internal title (not displayed),
+            header; LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:internal_title,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             tx_page_overview_root,
