@@ -14,6 +14,10 @@
                 <source>Settings</source>
                 <target xml:lang="de">Einstellungen</target>
             </trans-unit>
+            <trans-unit id="page_settings">
+                <source>Overview settings</source>
+                <target xml:lang="de">Übersichts-Einstellungen</target>
+            </trans-unit>
             <trans-unit id="internal_title">
                 <source>Title (not displayed)</source>
                 <target xml:lang="de">Titel (wird nicht angezeigt)</target>

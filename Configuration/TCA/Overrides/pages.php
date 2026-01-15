@@ -84,7 +84,7 @@ ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
 // Tab beibehalten, Feld anhängen
 ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    '--div--;LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:tab.overview,
+    '--div--;LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:page_settings,
      tx_page_overview_img, tx_page_overview_desc, tx_page_overview_exclude',
     '',
     'after:title'
