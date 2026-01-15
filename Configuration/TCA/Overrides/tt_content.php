@@ -51,6 +51,10 @@ ExtensionManagementUtility::addTcaSelectItem(
 );
 */
 
+// Backend-Language-File explizit registrieren, ExtensionManagementUtility::addTcaSelectItem() lädt KEINE Sprachdateien!
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:core/Resources/Private/Language/locallang_ttc.xlf'][] =
+    'EXT:page_overview/Resources/Private/Language/locallang.xlf';
+
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
