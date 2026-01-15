@@ -26,6 +26,17 @@
                 <source>Show page descriptions</source>
                 <target xml:lang="de">Zeige Seitenbeschreibungen</target>
             </trans-unit>
+            <trans-unit id="img.label">
+                <source>Image in overview</source>
+                <target xml:lang="de">Bild in der Übersicht</target>
+            </trans-unit>
+            <trans-unit id="desc">
+                <source>Your description.</source>
+            </trans-unit>
+            <trans-unit id="overview_img">
+                <source>Overview image</source>
+                <target xml:lang="de">Übersichtsbild</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -9,12 +9,12 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 $additionalColumns = [
     'tx_page_overview_img' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:img.label',
-        'description' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:img.desc',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:img.label',
+        'description' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:img.desc',
         'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
             'tx_page_overview_img',
             [
-                'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:overview_img',
+                'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:overview_img',
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'Bild hinzufügen für die Ansicht',
                     'showPossibleLocalizationRecords' => true,
