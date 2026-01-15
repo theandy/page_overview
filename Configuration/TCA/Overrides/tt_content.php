@@ -59,7 +59,6 @@ ExtensionManagementUtility::addTcaSelectItem(
         'pageoverview_pages',
         'content-text',
     ],
-    'text',
     'after'
 );
 
