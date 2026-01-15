@@ -97,7 +97,7 @@ call_user_func(static function (): void {
     $extensionKey = 'page_overview';
     ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
-        'Configuration/TsConfig/Page/NewContentElementWizard.tsconfig',
+        'Configuration/TsConfig/Page/All.tsconfig',
         'Page Overview'
     );
 });
