@@ -26,6 +26,10 @@
                 <source>Show page descriptions</source>
                 <target xml:lang="de">Zeige Seitenbeschreibungen</target>
             </trans-unit>
+            <trans-unit id="show_description.info">
+                <source>When checked, page descriptions will be rendered in overview.</source>
+                <target xml:lang="de">Wenn aktiviert, werden die Seitenbeschreibungen ausgegeben.</target>
+            </trans-unit>
             <trans-unit id="img.label">
                 <source>Image in overview</source>
                 <target xml:lang="de">Bild in der Übersicht</target>
@@ -51,7 +55,7 @@
                 <target xml:lang="de">Diese Seite ausschließen</target>
             </trans-unit>
             <trans-unit id="exclude.desc">
-                <source>When checked, this will not be shown in overview.</source>
+                <source>When checked, this page will not be shown in overview.</source>
                 <target xml:lang="de">Wenn aktiv, wird diese Seite in der Übersicht nicht angezeigt.</target>
             </trans-unit>
         </body>

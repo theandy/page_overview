@@ -25,6 +25,7 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_showdesc' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:show_description.label',
+        'description' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:show_description.info',
         'config' => [
             'type' => 'check',
             'default' => 1,
