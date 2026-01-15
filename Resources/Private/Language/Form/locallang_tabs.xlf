@@ -31,7 +31,8 @@
                 <target xml:lang="de">Bild in der Übersicht</target>
             </trans-unit>
             <trans-unit id="desc">
-                <source>Your description.</source>
+                <source>Page description</source>
+                <target xml:lang="de">Seitenbeschreibung</target>
             </trans-unit>
             <trans-unit id="overview_img">
                 <source>Overview image</source>

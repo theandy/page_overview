@@ -50,7 +50,7 @@ $additionalColumns = [
     ],
     'tx_page_overview_desc' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:desc',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:desc',
         'config' => [
             'type' => 'text',
             'enableRichtext' => true,
@@ -61,7 +61,7 @@ $additionalColumns = [
     ],
     'tx_page_overview_exclude' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:exclude.label',
         'description' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.desc',
         'config' => [
             'type' => 'check',
