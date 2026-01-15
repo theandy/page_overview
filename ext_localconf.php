@@ -13,10 +13,12 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['page_overview'] = 'EXT:page_overv
 /**
  * PageTS einbinden
  */
+
+/*
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    // '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">',
-    // '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig">'
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">',
 );
+*/
 
 /*
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
