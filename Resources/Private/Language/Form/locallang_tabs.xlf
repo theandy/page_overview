@@ -6,6 +6,10 @@
             <authorEmail>info@andreasloewer.de</authorEmail>
         </header>
         <body>
+            <trans-unit id="tt_content.pageoverview_pages.title">
+                <source>Overview pages</source>
+                <target xml:lang="de">Übersichtsseiten</target>
+            </trans-unit>
             <trans-unit id="general">
                 <source>Settings</source>
                 <target xml:lang="de">Einstellungen</target>

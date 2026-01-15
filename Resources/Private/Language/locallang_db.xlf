@@ -6,18 +6,6 @@
             <authorEmail>info@andreasloewer.de</authorEmail>
         </header>
         <body>
-            <trans-unit id="tt_content.pageoverview_pages.title">
-                <source>Unterseiten anzeigen</source>
-                <target xml:lang="de">Show subpages</target>
-            </trans-unit>
-            <trans-unit id="tab.overview">
-                <source>Page overview</source>
-            </trans-unit>
-
-
-
-
-
         </body>
     </file>
 </xliff>
