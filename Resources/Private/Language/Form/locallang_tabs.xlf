@@ -35,12 +35,24 @@
                 <target xml:lang="de">Seitenbeschreibung</target>
             </trans-unit>
             <trans-unit id="desc_info">
-                <source>Info for page description</source>
-                <target xml:lang="de">Info für Seitenbeschreibung</target>
+                <source>If empty, description (SEO) will be used.</source>
+                <target xml:lang="de">Falls leer, wird die Beschreibung (SEO) verwendet.</target>
             </trans-unit>
             <trans-unit id="overview_img">
                 <source>Overview image</source>
                 <target xml:lang="de">Übersichtsbild</target>
+            </trans-unit>
+            <trans-unit id="overview_img.add">
+                <source>Add overview image</source>
+                <target xml:lang="de">Übersichtsbild einfügen</target>
+            </trans-unit>
+            <trans-unit id="exclude.item">
+                <source>Exclude this page</source>
+                <target xml:lang="de">Diese Seite ausschließen</target>
+            </trans-unit>
+            <trans-unit id="exclude.desc">
+                <source>When checked, this will not be shown in overview.</source>
+                <target xml:lang="de">Wenn aktiv, wird diese Seite in der Übersicht nicht angezeigt.</target>
             </trans-unit>
         </body>
     </file>

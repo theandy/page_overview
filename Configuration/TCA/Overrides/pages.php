@@ -16,7 +16,7 @@ $additionalColumns = [
             [
                 'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:overview_img',
                 'appearance' => [
-                    'createNewRelationLinkTitle' => 'Bild hinzufügen für die Ansicht',
+                    'createNewRelationLinkTitle' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:overview_img.add',
                     'showPossibleLocalizationRecords' => true,
                 ],
                 'behaviour' => [
@@ -69,7 +69,7 @@ $additionalColumns = [
             'renderType' => 'checkboxToggle',
             'items' => [
                 [
-                    'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.item',
+                    'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:exclude.item',
                     1,
                 ],
             ],
