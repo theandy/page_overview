@@ -1,7 +1,7 @@
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         pageoverview_pages {
-            iconIdentifier = content-text
+            iconIdentifier = content-image
             title = Seitenübersicht
             description = Unterseiten-Übersicht
             tt_content_defValues {
