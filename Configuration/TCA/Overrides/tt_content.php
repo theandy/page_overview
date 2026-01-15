@@ -34,25 +34,6 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
     ],
 ]);
 
-// CType registrieren
-/*
-ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        'label' => 'Seitenübersicht',
-        'value' => 'pageoverview_pages',
-        'icon' => 'content-text',
-        'group' => 'default',
-        'description' => 'Unterseiten-Übersicht',
-    ],
-    'textmedia',
-    'after'
-);
-*/
-
-
-
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -66,7 +47,7 @@ ExtensionManagementUtility::addTcaSelectItem(
 );
 
 
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
+// $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages'] = 'content-text';
 
 // Typ konfigurieren (Feld direkt enthalten)
 $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
