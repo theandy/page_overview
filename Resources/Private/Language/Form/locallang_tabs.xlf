@@ -34,6 +34,10 @@
                 <source>Page description</source>
                 <target xml:lang="de">Seitenbeschreibung</target>
             </trans-unit>
+            <trans-unit id="desc_info">
+                <source>Info for page description</source>
+                <target xml:lang="de">Info für Seitenbeschreibung</target>
+            </trans-unit>
             <trans-unit id="overview_img">
                 <source>Overview image</source>
                 <target xml:lang="de">Übersichtsbild</target>

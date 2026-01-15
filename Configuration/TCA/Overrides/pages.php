@@ -51,6 +51,7 @@ $additionalColumns = [
     'tx_page_overview_desc' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:desc',
+        'description' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:desc_info',
         'config' => [
             'type' => 'text',
             'enableRichtext' => true,
