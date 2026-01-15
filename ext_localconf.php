@@ -1,6 +1,12 @@
 <?php
 defined('TYPO3') or die('Access denied.');
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+ExtensionManagementUtility::addPageTSConfig(
+    '@import "EXT:page_overview/Configuration/PageTSconfig/NewContentElementWizard.tsconfig"'
+);
+
 /**
  * RTE Preset
  */

@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        pageoverview_pages {
+            iconIdentifier = content-text
+            title = Seitenübersicht
+            description = Unterseiten-Übersicht
+            tt_content_defValues {
+                CType = pageoverview_pages
+            }
+        }
+    }
+    show := addToList(pageoverview_pages)
+}
