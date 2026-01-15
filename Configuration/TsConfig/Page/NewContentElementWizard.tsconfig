@@ -1,7 +1,4 @@
-mod.wizards.newContentElement.wizardItems.pageoverview {
-    header = Page Overview
-    position = 20
-
+mod.wizards.newContentElement.wizardItems.common {
     elements {
         pageoverview_pages {
             iconIdentifier = content-text
@@ -14,5 +11,5 @@ mod.wizards.newContentElement.wizardItems.pageoverview {
         }
     }
 
-    show = pageoverview_pages
+    show := addToList(pageoverview_pages)
 }
