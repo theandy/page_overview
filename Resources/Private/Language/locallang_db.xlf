@@ -22,10 +22,7 @@
             <trans-unit id="img.desc">
                 <source>Will be uses for this page when shown on an overview.</source>
             </trans-unit>
-            <trans-unit id="exclude.label">
-                <source>Exclude from page overview</source>
-                <target xml:lang="de">Von Seitenübersicht ausschließen</target>
-            </trans-unit>
+
             <trans-unit id="exclude.item">
                 <source>Exclude this</source>
                 <target xml:lang="de">Das ausschließen...</target>

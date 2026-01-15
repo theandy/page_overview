@@ -8,7 +8,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_root' => [
         'exclude' => 1,
-        'label' => 'Start page for overview',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
         'config' => [
             'type' => 'group',
             'internal_type' => 'db',
