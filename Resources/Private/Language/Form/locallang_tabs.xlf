@@ -18,6 +18,10 @@
                 <source>Subpages of this page</source>
                 <target xml:lang="de">Unterseiten diese Seite</target>
             </trans-unit>
+            <trans-unit id="root_page.info">
+                <source>If not provided, subpages of current page will be used.</source>
+                <target xml:lang="de">Falls nicht angegeben, werden Unterseiten dieser Seite verwendet.</target>
+            </trans-unit>
             <trans-unit id="exclude.label">
                 <source>Exclude in overview</source>
                 <target xml:lang="de">In Seitenübersicht ausschließen</target>
