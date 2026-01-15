@@ -72,3 +72,6 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
         ],
     ],
 ];
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['pageoverview_pages']
+    = 'content-pageoverview';
