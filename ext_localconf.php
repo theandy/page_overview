@@ -14,11 +14,15 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['page_overview'] = 'EXT:page_overv
  * PageTS einbinden
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">'
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:page_overview/Configuration/TsConfig/Page/All.tsconfig">',
+    '<INCLUDE_TYPOSCRIPT: source="EXT:page_overview/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig">'
 );
+
+/*
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '@import "EXT:page_overview/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig"'
 );
+*/
 
 /**
  * Stellt zusätzliche Seitenfelder im FE bereit, damit MenuProcessor sie liefert.
