@@ -55,10 +55,11 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:tt_content.pageoverview_pages.title',
+        'YOYO',
         'pageoverview_pages',
         'content-text',
     ],
+    'text',
     'after'
 );
 
