@@ -34,7 +34,7 @@
                 <source>YOur Image</source>
                 <target xml:lang="de">Ihr Bild</target>
             </trans-unit>
-            <trans-unit id="plugin.pages.title">
+            <trans-unit id="tt_content.pageoverview_pages.title">
                 <source>Page overview from locallang_db.xlf</source>
                 <target xml:lang="de">Seitenübersicht aus locallang_db.xlf</target>
             </trans-unit>
