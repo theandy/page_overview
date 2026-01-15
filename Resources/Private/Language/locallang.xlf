@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="EXT:page_overview/Resources/Private/Language/locallang.xlf" date="2020-10-18T18:20:51Z" product-name="page_overview">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-01-31UTC11:16:290">
+        <header>
+            <authorName>Andreas Löwer</authorName>
+            <authorEmail>info@andreasloewer.de</authorEmail>
+        </header>
         <body>
             <trans-unit id="plugin.pages.title">
                 <source>Not used anymore</source>
