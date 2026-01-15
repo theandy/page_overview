@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-01-31UTC11:16:290">
+        <header>
+            <authorName>Andreas Löwer</authorName>
+            <authorEmail>info@andreasloewer.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="general">
+                <source>Unterseiten anzeigen</source>
+                <target xml:lang="de">Show subpages</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

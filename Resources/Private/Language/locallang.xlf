@@ -3,7 +3,7 @@
     <file source-language="en" datatype="plaintext" original="EXT:page_overview/Resources/Private/Language/locallang.xlf" date="2020-10-18T18:20:51Z" product-name="page_overview">
         <body>
             <trans-unit id="plugin.pages.title">
-                <source>Seitenübersicht</source>
+                <source>Not used anymore</source>
             </trans-unit>
         </body>
     </file>

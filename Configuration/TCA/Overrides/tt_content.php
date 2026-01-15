@@ -71,7 +71,7 @@ $GLOBALS['TCA']['tt_content']['types']['pageoverview_pages'] = [
             --palette--;;general,
             header; Internal title (not displayed),
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        --div--;Einstellungen,
+        --div--;LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             tx_page_overview_root,
             tx_page_overview_showdesc,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,

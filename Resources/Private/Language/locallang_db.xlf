@@ -6,6 +6,10 @@
             <authorEmail>info@andreasloewer.de</authorEmail>
         </header>
         <body>
+            <trans-unit id="tt_content.pageoverview_pages.title">
+                <source>Unterseiten anzeigen</source>
+                <target xml:lang="de">Show subpages</target>
+            </trans-unit>
             <trans-unit id="tab.overview">
                 <source>Page overview</source>
             </trans-unit>
@@ -33,10 +37,6 @@
             <trans-unit id="overview_img">
                 <source>YOur Image</source>
                 <target xml:lang="de">Ihr Bild</target>
-            </trans-unit>
-            <trans-unit id="tt_content.pageoverview_pages.title">
-                <source>Page overview from locallang_db.xlf</source>
-                <target xml:lang="de">Seitenübersicht aus locallang_db.xlf</target>
             </trans-unit>
         </body>
     </file>
