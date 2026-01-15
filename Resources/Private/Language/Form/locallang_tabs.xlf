@@ -14,6 +14,10 @@
                 <source>Title (not displayed)</source>
                 <target xml:lang="de">Titel (wird nicht angezeigt)</target>
             </trans-unit>
+            <trans-unit id="root_page.label">
+                <source>Subpages of this page</source>
+                <target xml:lang="de">Unterseiten diese Seite</target>
+            </trans-unit>
             <trans-unit id="exclude.label">
                 <source>Exclude in overview</source>
                 <target xml:lang="de">In Seitenübersicht ausschließen</target>

@@ -8,7 +8,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_root' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:exclude.label',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:root_page.label',
         'config' => [
             'type' => 'group',
             'internal_type' => 'db',
