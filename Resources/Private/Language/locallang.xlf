@@ -10,6 +10,10 @@
                 <source>Overview pages</source>
                 <target xml:lang="de">Übersichtsseiten</target>
             </trans-unit>
+            <trans-unit id="plugin.pages.description">
+                <source>Displays a list of selected pages</source>
+                <target xml:lang="de">Zeigt eine Liste ausgewählter Seiten</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
