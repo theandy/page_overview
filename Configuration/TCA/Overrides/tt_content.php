@@ -8,7 +8,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_page_overview_root' => [
         'exclude' => 1,
-        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/locallang_db.xlf:exclude.label',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:exclude.label',
         'config' => [
             'type' => 'group',
             'internal_type' => 'db',
@@ -24,7 +24,7 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
     // NEU: Anzeige der Seitenbeschreibung toggeln (Default: an)
     'tx_page_overview_showdesc' => [
         'exclude' => 1,
-        'label' => 'Seitenbeschreibungen anzeigen',
+        'label' => 'LLL:EXT:page_overview/Resources/Private/Language/Form/locallang_tabs.xlf:show_description.label',
         'config' => [
             'type' => 'check',
             'default' => 1,

@@ -18,6 +18,10 @@
                 <source>Exclude in overview</source>
                 <target xml:lang="de">In Seitenübersicht ausschließen</target>
             </trans-unit>
+            <trans-unit id="show_description.label">
+                <source>Show page descriptions</source>
+                <target xml:lang="de">Zeige Seitenbeschreibungen</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
