@@ -90,11 +90,13 @@ ExtensionManagementUtility::addToAllTCAtypes(
     'after:title'
 );
 
+
+
+// was: 'Configuration/TsConfig/Page/All.tsconfig',
 call_user_func(static function (): void {
     $extensionKey = 'page_overview';
     ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
-        // 'Configuration/TsConfig/Page/All.tsconfig',
         'Configuration/TsConfig/Page/NewContentElementWizard.tsconfig',
         'Page Overview'
     );
