@@ -3,3 +3,28 @@
 
 // Modules
 // import your modules here
+.page-overview {
+  .row {
+    display: flex;
+  }
+
+  .col-4 {
+    display: flex;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  // Beschreibung füllt den verfügbaren Platz
+  .page-desc {
+    flex-grow: 1;
+  }
+
+  // Button immer unten ausrichten
+  .page-link {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,19 @@
+.page-overview .row {
+  display: flex;
+}
+.page-overview .col-4 {
+  display: flex;
+}
+.page-overview .page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.page-overview .page-desc {
+  flex-grow: 1;
+}
+.page-overview .page-link {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=layout.css.map */
